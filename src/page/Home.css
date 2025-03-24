@@ -1,0 +1,154 @@
+* {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.home-page {
+        width: 100%;
+        height: 600px;
+        background-color: #ffffff;
+        margin-bottom: 1.8rem;
+}
+
+.home-content {
+        width: 80%;
+        overflow: hidden;
+        height: auto;
+        text-align: left;
+        position: relative;
+        top: 7rem;
+        left: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+}
+
+.textarea-home h1 {
+        font-size: 3rem;
+        font-weight: 600;
+        text-transform: capitalize;
+        margin-bottom: 10px;
+        line-height: 4rem;
+}
+
+.textarea-home h1 span {
+        color: rgba(124, 124, 100, 0.87);
+        font-size: 5rem;
+        font-weight: 900;
+        text-transform: uppercase;
+}
+
+.textarea-home p {
+        width: 35rem;
+        margin-bottom: 20px;
+        font-size: 19px;
+}
+
+.home-btn-group button {
+        padding: 8px 0px;
+        font-weight: 500;
+        font-size: 1.5rem;
+        text-transform: capitalize;
+        text-align: center;
+        border: none;
+        border-radius: 5px;
+        background-color: rgba(19, 99, 19, 0.705);
+
+        &:hover {
+                background-color: rgb(143, 189, 143);
+                cursor: pointer;
+                transition: all 0.2s ease;
+        }
+
+}
+
+.home-btn-group .btn-getstart {
+        width: 15rem;
+        margin-right: 10px;
+}
+
+.home-btn-group .btn-login {
+        width: 8rem;
+        background-color: rgba(19, 99, 19, 0.705);
+}
+
+.home-image img {
+        width: 500px;
+        height: 400px;
+      object-fit: contain;
+        &:hover {
+                transform: scale(1.1);
+                transition: transform 0.5s ease;
+        }
+}
+
+
+.home-textarea{
+           max-width: 80%;
+           height: auto;
+
+           margin: 3rem auto;
+           text-transform: capitalize;
+}
+
+/* mobile reponsive deign in home component  */
+
+@media screen and (max-width:480px) {
+        .home-page {
+                height: auto;
+                background-color: white;
+                width: 100%;
+                background-position: top center;
+                background-repeat: no-repeat;
+        }
+
+        .home-content {
+                text-align: center;
+                top: 1rem;
+                left: 20px;
+        }
+
+        .textarea-home h1 {
+                font-size: 2rem;
+                font-weight: 400;
+                text-transform: capitalize;
+                margin-bottom: 5px;
+                line-height: 3rem;
+        }
+
+        .textarea-home h1 span {
+
+                font-size: 2.5rem;
+                font-weight: 600;
+
+        }
+
+        .textarea-home p {
+                width: auto;
+                margin-bottom: 20px;
+                font-size: 19px;
+        }
+
+        .home-btn-group{
+           display: flex;
+        }
+        .home-btn-group button {
+                padding: 5px 0px;
+                font-weight: 400;
+                font-size: 1.1rem;
+ border-radius: 3px;
+        }
+                .home-btn-group .btn-getstart {
+                        width: auto;
+                        padding: 4px 3rem;
+                        margin-right: 10px;
+                }
+
+        .home-image img {
+                display: none;
+        }
+
+
+                .home-textarea {
+                       margin: 15px auto;
+                }
+}

@@ -1,0 +1,73 @@
+.footer-parent {
+       width: auto;
+       height: auto;
+       padding: 10px;
+       display: flex;
+       justify-content: space-evenly;
+       align-items: center;
+       overflow: hidden;
+       background-color: rgb(158, 157, 157);
+}
+
+/* footer-heading style */
+.footer-heading {
+       font-size: 2.4rem;
+       font-weight: 600;
+       color: rgb(250, 252, 255);
+}
+
+.footer-heading span {
+       color: rgba(245, 245, 45, 0.801);
+}
+
+/* footer-about style */
+.footer-about {
+       text-align: left;
+       width: 40rem;
+       color: white;
+}
+
+.footer-about h3 {
+       font-size: 1.8rem;
+
+}
+
+.footer-about p {
+       font-size: 19px;
+
+}
+
+/* footer-routing navgistion in pages 
+ */
+.footer-routing ul li {
+       list-style: none;
+
+
+}
+
+.footer-routing ul>Link {
+       text-decoration: none;
+}
+
+
+/* mobile screen responsive design  */
+@media screen and (max-width:480px) {
+       .footer-parent {
+              padding: 10px;
+              flex-direction: column;
+              align-items: center;
+       }
+
+       /* footer-heading style */
+       .footer-heading {
+              font-size: 1.4rem;
+              font-weight: 400;
+       }
+
+       /* footer-about style */
+       .footer-about {
+              text-align: left;
+              width: auto;
+              color: white;
+       }
+}

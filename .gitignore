@@ -21,3 +21,14 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+
+
+
+
+How It Works
+ThemeContext.Provider: Wraps the Toolbar component and provides the theme and toggleTheme function to all child components.
+
+useContext Hook: Used in ThemedButton and ThemedText to access the context values (theme and toggleTheme).
+
+Dynamic Updates: When the toggleTheme function is called, it updates the theme state, which triggers a re-render of all components consuming the context.

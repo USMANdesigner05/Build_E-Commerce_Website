@@ -2,13 +2,24 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap/dist/js/bootstrap.bundle"
 import reportWebVitals from './reportWebVitals';
+// router import in reactjs 
+import { BrowserRouter } from 'react-router-dom';
+// Appprovider to contextapi to data pass 
+// import { AppProvider } from './contactapi/ProductContactapi';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  // <AppProvider>
+    <React.StrictMode>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </React.StrictMode>
+  // </AppProvider>
+
 );
 
 // If you want to start measuring performance in your app, pass a function

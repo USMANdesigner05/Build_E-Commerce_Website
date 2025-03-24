@@ -1,0 +1,142 @@
+*{
+     margin: 0;
+     padding: 0;
+}
+/* .contact-page style  */
+.contact-page{
+        width: 100%;
+        background-color: rgb(233, 227, 227);
+}
+ /* top heading in contact page h1 */
+.contact-page h1{
+       text-align: center;
+    font-size: 5rem;
+        font-weight: 900;
+        margin-bottom: 3rem;
+}
+
+
+.contact-parent{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       gap: 5rem;
+}
+     /* <----------- contact page left site text and heading ---------->  */
+ 
+.contact-text{
+     text-align: left;
+     padding: 10px 2rem;
+     color: rgb(30, 128, 5);
+}
+.contact-text h3{
+     font-size: 3rem;
+     font-weight: 600;
+
+}
+.contact-text p{
+     font-size: 25px;
+
+}
+
+     /* <----------- contact from input field ---------->  */
+/* .contact-field{
+    padding: 20px 10px;
+} 
+
+.contact-input{
+        border: none;
+        width: auto;
+        padding: 2rem 25px;
+        border-radius: 10px;
+        background-color: rgb(255, 255, 255);
+        height: auto;
+        box-shadow: 10px 10px 10px rgba(197, 195, 195, 0.651);
+        
+}
+.contact-input *{
+        display: block;
+        text-align: left;
+        
+}
+.contact-input label{
+       text-transform: capitalize;
+        text-align: left;
+        margin-bottom: 5px;
+        font-size: 19px;
+        font-weight: 500;
+
+}
+.contact-input input{
+        width: 28rem;
+        font-size: 20px;
+        padding: 5px 5px;
+        border: 1px solid rgb(196, 188, 188);
+        outline: none;
+     border-radius: 5px;
+        margin-bottom: 10px;
+
+}
+.contact-input textarea{
+        width: 29rem;
+        height: 8rem;
+        font-size: 20px;
+        padding: 5px;
+     border: 1px solid rgb(196, 188, 188);
+            outline: none;
+          border-radius: 5px;
+
+}
+.contact-input button{
+        width: 29rem;
+        font-size: 20px;
+        text-align: center;
+        padding: 8px 0px;
+        border: none;
+            outline: none;
+            border-radius: 5px;
+            margin-top: 1rem;
+            background-color: #0ebb28;
+            transition: all 0.2s ease-in-out;
+            &:hover{
+               background-color: #40e479;
+               cursor: pointer;
+            }
+
+} */
+
+
+/* contact us page responsive design using css media query  */
+@media  screen and (max-width: 480px) {
+     .contact-page{
+          max-width: 100%;
+          margin: 0;
+
+     }
+     .contact-text{
+          text-align: left;  
+          
+     }
+          .contact-page h1 {
+               text-align: center;
+               font-size: 1.2rem;
+               font-weight: 600;
+          }
+     .contact-text h3{
+          font-size: 0.9rem;  
+          font-weight: 300;
+
+     }
+     .contact-text p{
+          font-size: 14px; 
+
+     }
+     .contact-page{
+        max-width: 100%;
+        background-color: rgb(233, 227, 227);
+        margin-left: 0;
+        margin-bottom: 0;
+}
+
+  
+}

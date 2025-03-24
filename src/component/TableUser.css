@@ -1,0 +1,59 @@
+ .table-show-user {
+
+     display: flex;
+     align-items: center;
+     justify-content: center;
+
+ }
+  .table-heading{
+        font-size: 3rem;
+        margin-top: 2rem;
+        text-transform: capitalize;
+  }
+ table {
+     border: 1px solid black;
+     margin-top: 5rem;
+     background-color: #b4beff;
+ }
+ table tr>td {
+     text-align: left;
+     padding: 12px;
+     border: 1px solid lightgray;
+ }
+
+ thead {
+     background-color: #418d9b;
+
+ }
+
+ thead tr {
+     border: 2px solid black;
+     text-transform: capitalize;
+ }
+
+
+ tbody {
+     background-color: #C7D9DD;
+ }
+
+ tbody>tr>td {
+     border: 1px solid black;
+
+ }
+
+ /* <------- media query in mobile site code -------->   */
+
+ @media screen  and (max-width:480px) {
+
+    .table-heading{
+     font-size: 1.5rem;
+    }
+    .table {
+          margin-top: 1rem;
+          min-width: 25rem;
+    }
+         table tr>td {
+             padding: 3px;
+             font-size: 12px;
+         }
+ }

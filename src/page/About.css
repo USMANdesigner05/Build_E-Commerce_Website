@@ -1,0 +1,193 @@
+* {
+       margin: 0;
+       padding: 0;
+}
+
+.about-page {
+       width: 100%;
+       overflow: hidden;
+       background-color: rgba(231, 221, 221, 0.623);
+}
+
+.about-content {
+       display: flex;
+       align-items: center;
+       justify-content: space-evenly;
+       height: 100vh;
+}
+
+/* textarea about page frist section  */
+.about-textarea {
+       width: 60%;
+       text-align: left;
+
+}
+
+.about-textarea h1 {
+       font-size: 3.7rem;
+       font-weight: 500;
+       line-height: 4rem;
+       margin-bottom: 10px;
+}
+
+.about-textarea h1 span {
+       font-size: 3.9rem;
+       font-weight: 700;
+       color: rgba(124, 124, 100, 0.87);
+}
+
+.about-textarea p {
+       font-size: 20px;
+       margin-bottom: 1rem;
+}
+
+/* /// */
+.about-btn {
+       font-size: 1.5rem;
+       padding: 7px 0;
+       background-color: rgba(19, 99, 19, 0.705);
+       border: none;
+       border-radius: 7px;
+       text-transform: capitalize;
+       font-weight: 500;
+       min-width: 18rem;
+       max-width: 10rem;
+
+       &:hover {
+              background-color: rgb(143, 189, 143);
+              cursor: pointer;
+              transition: all 0.2s ease;
+       }
+
+}
+
+/* about frist section image  */
+.about-image img {
+       height: 400px;
+       width: 400px;
+       border-radius: 10px;
+
+       &:hover {
+              transform: scale(1.1);
+              transition: transform 0.4s ease;
+       }
+}
+
+
+/* <------------ second section in about page service customer ----------->   */
+.left-service {
+       background-color: rgb(255, 255, 255);
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       gap: 3rem;
+       flex-wrap: wrap;
+       height: 500px;
+       box-sizing: border-box;
+       padding-top: 5rem;
+}
+
+/* <--------  service page image center -------->   */
+
+
+.left-site-box div {
+       padding: 2rem 2rem;
+       border: none;
+       border-radius: 12px;
+       background-color: rgb(215, 215, 218);
+       margin-bottom: 3rem;
+       font-size: 22px;
+       font-weight: 600;
+      
+       &:hover {
+              background-color: black;
+       color: rgb(255, 255, 255);
+              transition: all 300ms ease;
+              transform: scaleX(1.1);
+              cursor: pointer;
+       }
+}
+
+.right-site-box div {
+       padding: 2rem 2rem;
+       border: none;
+       border-radius: 12px;
+       background-color: rgb(215, 215, 218);
+       margin-bottom: 3rem;
+       font-size: 22px;
+       font-weight: 600;
+
+
+       &:hover {
+              background-color: black;
+              color: rgb(255, 255, 255);
+              transition: all 300ms ease;
+              transform: scaleX(1.1);
+                     cursor: pointer;
+       }
+}
+
+
+/* <----------------  media query in mobile site responsive code ----------->   */
+
+@media screen and (max-width:480px) {
+      .about-page{
+       max-width: 100%;
+       overflow: hidden;
+       height: auto;
+
+      }
+      .about-content {
+             flex-direction: column;
+             align-items: center;
+             height: 600px;
+             padding-bottom: 5rem;
+      }
+      .about-textarea {
+             width: 100%;
+             text-align: left;
+
+      }
+      .about-textarea h1 {
+             font-size: 2.2rem;
+             font-weight: 500;
+      }
+      .about-textarea h1 span {
+             font-size: 3.1rem;
+             font-weight: 600;
+      }
+      .about-textarea p {
+             font-size: 18px;
+      }
+
+      .about-btn{
+          font-size: 1.1rem;
+          letter-spacing: 1px;
+          margin-left: 1.8rem;
+      }
+
+      /* about frist section image  */
+      .about-image img {
+            visibility: hidden;
+      }
+
+
+      /* <------------ second section in about page service customer ----------->   */
+      .left-service {
+       display: flex;
+             flex-direction: row;
+             gap: 10px;
+              padding-top: 1rem;
+      }
+
+      .left-site-box div{
+           padding: 20px;
+           font-size: 17px;
+       margin-bottom: 10px;
+      }
+      .right-site-box div{
+           padding: 20px 2.6rem;
+           font-size: 17px;
+              margin-bottom: 10px;
+      }
+}
